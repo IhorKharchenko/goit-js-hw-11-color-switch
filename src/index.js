@@ -16,11 +16,7 @@ const randomIntegerFromInterval = (min, max) => {
 };
 
 pauseBtn.disabled = true;
-
 const bodyColorize = () => {
-  // if (intervalId) {
-  //   return;
-  // }
   intervalId = setInterval(() => {
     startBtn.disabled = true;
     body.style.backgroundColor =
@@ -57,20 +53,15 @@ const btnDisable = (btn, interval) => {
 
 function colorizeBtnStart() {
   startColorize = setInterval(() => {
-    startBtn.style.backgroundColor =
-      "#" + Math.floor(Math.random() * 16777215).toString(16);
   }, 500);
 }
 
 function colorizeBtnPause() {
   pauseColorize = setInterval(() => {
-    pauseBtn.style.backgroundColor =
-      "#" + Math.floor(Math.random() * 16777215).toString(16);
-  }, 500);
+     }, 500);
 }
 
 function colorizeTitle() {
   setInterval(() => {
-    h1.style.color = "#" + Math.floor(Math.random() * 16777215).toString(16);
   }, 500);
 }
